@@ -1,0 +1,15 @@
+while(True):
+     ip = input("Enter the ip address:")
+
+     if ip.endswith(".255"):
+         print("broadcast ip")
+     elif ip.endswith(".0"):
+         print("Network ip")
+     elif ip.startswith("10."):
+        print("class A ")
+     elif ip.startswith("172.") and float(ip[4:7])>= 16. and float(ip[4:7])<= 31. :
+         print("class B")
+     elif ip.startswith("192.168."):
+        print("class c")
+     else:
+         print("Public IP")
