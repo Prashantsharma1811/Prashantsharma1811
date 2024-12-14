@@ -1,0 +1,6 @@
+while(True) :
+    dst_ip = input("dst ip:")
+    sou_ip = input("sou ip:")
+    traceroute_commad = "traceroute{} source{}"
+    config = traceroute_commad.format(dst_ip,sou_ip)
+    print(config)
